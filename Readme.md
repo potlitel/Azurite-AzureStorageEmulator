@@ -1,4 +1,4 @@
-## Descripción de Azurite como Azure Blob Storage 🚀
+## Descripción de Azurite como emulador de Azure Blob Storage 🚀
 
 ¡Bienvenido a tu guía para usar Azurite como un emulador de Azure Blob Storage! Azurite es una herramienta de código abierto que simula los servicios de almacenamiento de Azure, permitiéndote desarrollar y probar tus aplicaciones localmente sin necesidad de una conexión a Internet. 🌐
 
