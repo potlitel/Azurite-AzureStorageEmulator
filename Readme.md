@@ -15,6 +15,12 @@ Puedes instalar Azurite de varias maneras:
         docker run -p 10000:10000 -p 10001:10001 -p 10002:10002 -v ./data:/data mcr.microsoft.com/azure-storage/azurite
     ```
 
+    o simplemente ejecuanto el ficheor docker-compose.yml de este repositorio
+
+    ```bash
+        docker-compose up -d
+    ```
+
 2. Usando npm:
    
     ```bash
