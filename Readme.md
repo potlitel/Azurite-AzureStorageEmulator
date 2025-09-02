@@ -9,7 +9,7 @@ Azurite es un emulador ligero que proporciona un entorno local gratuito para pro
 ### Instalación de Azurite 🛠️
 Puedes instalar Azurite de varias maneras:
 
-1. Usando Docker:
+1. 🐳 Usando Docker:
 
     ```bash
         docker run -p 10000:10000 -p 10001:10001 -p 10002:10002 -v ./data:/data mcr.microsoft.com/azure-storage/azurite
@@ -21,14 +21,14 @@ Puedes instalar Azurite de varias maneras:
         docker-compose up -d
     ```
 
-2. Usando npm:
+2. ✧ Usando npm:
    
     ```bash
         npm install -g azurite
         azurite --silent --location c:\azurite --debug c:\azurite\debug.log
     ```
 
-3. Visual Studio Code:
+3. ✧ Visual Studio Code:
 
     - Instala la extensión de Azurite desde el marketplace de Visual Studio Code.
 
