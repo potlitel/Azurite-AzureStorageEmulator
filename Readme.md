@@ -21,14 +21,14 @@ Puedes instalar Azurite de varias maneras:
         docker-compose up -d
     ```
 
-2. ✧ Usando npm:
+2. 🔹 Usando npm:
    
     ```bash
         npm install -g azurite
         azurite --silent --location c:\azurite --debug c:\azurite\debug.log
     ```
 
-3. ✧ Visual Studio Code:
+3. 🔹 Visual Studio Code:
 
     - Instala la extensión de Azurite desde el marketplace de Visual Studio Code.
 
