@@ -1,0 +1,64 @@
+dotnet dev-certs https -ep %USERPROFILE%\.aspnet\https\MapComponent.pfx -p zaqWE*123
+
+Important urls:
+-Azure Storage Development with Azurite — Part I (https://medium.com/@ralf.stuckert/azure-storage-development-with-azurite-part-i-1cfc502ab0f2)
+-Step-by-step guide on how to set up Azurite locally (https://medium.com/@nischay_sharma/step-by-step-guide-on-how-to-set-up-azurite-locally-102332fc2ec)
+
+-https://github.com/FiloSottile/mkcert?tab=readme-ov-file#installation
+-https://github.com/Azure/Azurite
+-https://github.com/FiloSottile/mkcert
+-https://medium.com/@ralf.stuckert/azure-storage-development-with-azurite-part-i-1cfc502ab0f2
+-https://medium.com/@ralf.stuckert/azure-storage-development-with-azurite-part-i-1cfc502ab0f2
+-https://github.com/microsoft/AzureStorageExplorer/issues/7209 (same error)
+-https://medium.com/@nischay_sharma/step-by-step-guide-on-how-to-set-up-azurite-locally-102332fc2ec
+-https://medium.com/@nischay_sharma/step-by-step-guide-on-how-to-set-up-azurite-locally-102332fc2ec
+-Azure Storage Explorer
+	-https://azure.microsoft.com/products/storage/storage-explorer
+	-https://learn.microsoft.com/es-es/azure/storage/common/storage-use-azurite?tabs=visual-studio%2Cblob-storage#connect-to-azurite-with-sdks-and-tools
+
+-Failed to create blob container 'sodocuments': unable to verify the first certificate
+-https://github.com/Azure/Azurite/issues/1073
+
+install mkcert logs:
+-----------------------------------------------------------------------------
+pwsh> choco install mkcert
+Chocolatey v2.2.2
+Installing the following packages:
+mkcert
+By installing, you accept licenses for the packages.
+
+mkcert v1.4.4 [Approved]
+mkcert package files install completed. Performing other installation steps.
+ ShimGen has successfully created a shim for mkcert.exe
+ The install of mkcert was successful.
+  Software installed to 'C:\ProgramData\chocolatey\lib\mkcert'
+
+Chocolatey installed 1/1 packages.
+ See the log for details (C:\ProgramData\chocolatey\logs\chocolatey.log).
+
+Did you know the proceeds of Pro (and some proceeds from other
+ licensed editions) go into bettering the community infrastructure?
+ Your support ensures an active community, keeps Chocolatey tip-top,
+ plus it nets you some awesome features!
+ https://chocolatey.org/compare
+
+Create new cert
+---------------------------------------------------------------------------
+pwsh> mkcert azurite.com "*.azurite.com" azurite.test localhost 127.0.0.1 ::1
+Created a new local CA 💥
+Note: the local CA is not installed in the system trust store.
+Run "mkcert -install" for certificates to be trusted automatically ⚠️
+
+Created a new certificate valid for the following names 📜
+ - "azurite.com"
+ - "*.azurite.com"
+ - "azurite.test"
+ - "localhost"
+ - "127.0.0.1"
+ - "::1"
+
+Reminder: X.509 wildcards only go one level deep, so this won't match a.b.azurite.com ℹ️
+
+The certificate is at "./azurite.com+5.pem" and the key at "./azurite.com+5-key.pem" ✅
+
+It will expire on 29 July 2027 🗓
